@@ -5,15 +5,14 @@ topology:
     exec:
       - systemctl -w net.ipv6.conf.all.forwarding=1
 
- nodes:
-    # Provider Edge (PE) Routers
+  nodes:
     pe1:
       kind: linux
       image: aperence/frr
       binds:
         - frr.conf:/etc/frr/daemons
         - configs/pe1/frr.conf:/etc/frr/frr.conf
-	
+
     pe2:
       kind: linux
       image: aperence/frr
@@ -21,7 +20,6 @@ topology:
         - frr.conf:/etc/frr/daemons
         - configs/pe2/frr.conf:/etc/frr/frr.conf
 
- # Customer Edge (CE) Routers
     ce_a:
       kind: linux
       image: aperence/frr
@@ -35,10 +33,9 @@ topology:
       binds:
         - frr.conf:/etc/frr/daemons
         - configs/ce_b/frr.conf:/etc/frr/frr.conf
-        
 
   links:
-    # Links for iBGP and eBGP sessions
     - endpoints: ["pe1:eth1", "ce_a:eth1"]
     - endpoints: ["pe2:eth1", "ce_b:eth1"]
     - endpoints: ["pe1:eth2", "pe2:eth2"]
+

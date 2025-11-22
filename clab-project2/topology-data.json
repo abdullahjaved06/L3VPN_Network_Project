@@ -1,0 +1,185 @@
+{
+  "name": "project2",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-c4e3dc06157b",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "ce_a": {
+      "index": "0",
+      "shortname": "ce_a",
+      "longname": "clab-project2-ce_a",
+      "fqdn": "ce_a.project2.io",
+      "group": "",
+      "labdir": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/clab-project2/ce_a",
+      "kind": "linux",
+      "image": "aperence/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.17",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::11",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c4e3dc06157b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/clab-project2/ce_a",
+        "clab-node-name": "ce_a",
+        "clab-node-type": "",
+        "clab-owner": "abdullah",
+        "clab-topo-file": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/topology.clab.yaml",
+        "containerlab": "project2"
+      },
+      "port-bindings": [
+      ]
+    },
+    "ce_b": {
+      "index": "1",
+      "shortname": "ce_b",
+      "longname": "clab-project2-ce_b",
+      "fqdn": "ce_b.project2.io",
+      "group": "",
+      "labdir": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/clab-project2/ce_b",
+      "kind": "linux",
+      "image": "aperence/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.16",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::10",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c4e3dc06157b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/clab-project2/ce_b",
+        "clab-node-name": "ce_b",
+        "clab-node-type": "",
+        "clab-owner": "abdullah",
+        "clab-topo-file": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/topology.clab.yaml",
+        "containerlab": "project2"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pe1": {
+      "index": "2",
+      "shortname": "pe1",
+      "longname": "clab-project2-pe1",
+      "fqdn": "pe1.project2.io",
+      "group": "",
+      "labdir": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/clab-project2/pe1",
+      "kind": "linux",
+      "image": "aperence/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.18",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::12",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c4e3dc06157b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/clab-project2/pe1",
+        "clab-node-name": "pe1",
+        "clab-node-type": "",
+        "clab-owner": "abdullah",
+        "clab-topo-file": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/topology.clab.yaml",
+        "containerlab": "project2"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pe2": {
+      "index": "3",
+      "shortname": "pe2",
+      "longname": "clab-project2-pe2",
+      "fqdn": "pe2.project2.io",
+      "group": "",
+      "labdir": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/clab-project2/pe2",
+      "kind": "linux",
+      "image": "aperence/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.19",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::13",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c4e3dc06157b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/clab-project2/pe2",
+        "clab-node-name": "pe2",
+        "clab-node-type": "",
+        "clab-owner": "abdullah",
+        "clab-topo-file": "/home/abdullah/Abdullah/ComputerSCienceMAsters/ComputerNetworks/Project2/project2_implementation/topology.clab.yaml",
+        "containerlab": "project2"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "pe1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:ae:11:37",
+        "peer": "z"
+      },
+      "z": {
+        "node": "ce_a",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:82:ea:fd",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "pe2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:62:42:6d",
+        "peer": "z"
+      },
+      "z": {
+        "node": "ce_b",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:3d:4e:88",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "pe1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:fa:08:6a",
+        "peer": "z"
+      },
+      "z": {
+        "node": "pe2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:b5:88:c4",
+        "peer": "a"
+      }
+    }
+  ]
+}
