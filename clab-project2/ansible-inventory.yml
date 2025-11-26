@@ -8,10 +8,10 @@ all:
     linux:
       hosts:
         clab-project2-ce_a:
-          ansible_host: 172.20.20.17
+          ansible_host: 172.20.20.9
         clab-project2-ce_b:
-          ansible_host: 172.20.20.16
+          ansible_host: 172.20.20.7
         clab-project2-pe1:
-          ansible_host: 172.20.20.18
+          ansible_host: 172.20.20.8
         clab-project2-pe2:
-          ansible_host: 172.20.20.19
+          ansible_host: 172.20.20.5
