@@ -1,0 +1,6 @@
+Testing:
+
+to test bgp, you can use "show bgp summary"
+to test IS-IS , you can use "show isis neighbor"
+
+
