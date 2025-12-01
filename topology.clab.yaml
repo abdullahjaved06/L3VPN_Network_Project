@@ -12,6 +12,10 @@ topology:
       binds:
         - frr.conf:/etc/frr/daemons
         - configs/pe1/frr.conf:/etc/frr/frr.conf
+      exec:
+       - ip link add A type vrf table 10
+       - ip link set A up
+       - ip link set eth1 master A
 
     pe2:
       kind: linux
@@ -19,6 +23,10 @@ topology:
       binds:
         - frr.conf:/etc/frr/daemons
         - configs/pe2/frr.conf:/etc/frr/frr.conf
+      exec:
+       - ip link add B type vrf table 20
+       - ip link set B up
+       - ip link set eth1 master B
 
     ce_a:
       kind: linux

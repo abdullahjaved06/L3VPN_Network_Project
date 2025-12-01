@@ -3,4 +3,11 @@ Testing:
 to test bgp, you can use "show bgp summary"
 to test IS-IS , you can use "show isis neighbor"
 
+test eBGP: 
+	show bgp vrf B summary 
+	show bgp vrf A summary 
+	
 
+on ceA and ceB, you can test with pings:	
+ping6 fc00:1a::1                 # PE1 eth1
+ping6 fc00:1b::2                 # PE2 eth1

@@ -12,6 +12,6 @@ all:
         clab-project2-ce_b:
           ansible_host: 172.20.20.19
         clab-project2-pe1:
-          ansible_host: 172.20.20.3
-        clab-project2-pe2:
           ansible_host: 172.20.20.14
+        clab-project2-pe2:
+          ansible_host: 172.20.20.3
