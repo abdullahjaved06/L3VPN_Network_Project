@@ -11,3 +11,8 @@ test eBGP:
 on ceA and ceB, you can test with pings:	
 ping6 fc00:1a::1                 # PE1 eth1
 ping6 fc00:1b::2                 # PE2 eth1
+
+
+To test srv6 locator on PE1 and PE2:
+show segment-routing srv6 locator
+show segment-routing srv6 sid
