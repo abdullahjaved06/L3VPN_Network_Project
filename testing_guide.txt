@@ -16,3 +16,11 @@ ping6 fc00:1b::2                 # PE2 eth1
 To test srv6 locator on PE1 and PE2:
 show segment-routing srv6 locator
 show segment-routing srv6 sid
+to see srv6 locators being advertised, you can use:
+show isis database detail
+
+To test VRF bgp and vpn, you can use:
+show bgp vrf A summary
+show bgp vrf A ipv6
+show bgp ipv6 vpn
+show segment-routing srv6 sid
