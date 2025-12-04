@@ -4,8 +4,8 @@ topology:
   defaults:
     exec:
       - sysctl -w net.ipv6.conf.all.forwarding=1
-      - sysctl -w net.vrf.strict_mode=1
       - sysctl -w net.ipv6.conf.all.seg6_enabled=1
+      - sysctl -w net.vrf.strict_mode=1
 
   nodes:
     pe1:
@@ -15,9 +15,9 @@ topology:
         - frr.conf:/etc/frr/daemons
         - configs/pe1/frr.conf:/etc/frr/frr.conf
       exec:
-       - ip link add A type vrf table 10
-       - ip link set A up
-       - ip link set eth1 master A
+        - ip link add A type vrf table 10
+        - ip link set A up
+        - ip link set eth1 master A
 
     pe2:
       kind: linux
@@ -26,9 +26,9 @@ topology:
         - frr.conf:/etc/frr/daemons
         - configs/pe2/frr.conf:/etc/frr/frr.conf
       exec:
-       - ip link add B type vrf table 20
-       - ip link set B up
-       - ip link set eth1 master B
+        - ip link add B type vrf table 20
+        - ip link set B up
+        - ip link set eth1 master B
 
     ce_a:
       kind: linux
@@ -45,7 +45,7 @@ topology:
         - configs/ce_b/frr.conf:/etc/frr/frr.conf
 
   links:
-    - endpoints: ["pe1:eth1", "ce_a:eth1"]
-    - endpoints: ["pe2:eth1", "ce_b:eth1"]
-    - endpoints: ["pe1:eth2", "pe2:eth2"]
+    - endpoints: ["pe1:eth1", "ce_a:eth1"]      # Apple
+    - endpoints: ["pe2:eth1", "ce_b:eth1"]      # Bad
+    - endpoints: ["pe1:eth2", "pe2:eth2"]       # core link
 
